@@ -9,8 +9,7 @@ Created on Sun May 17 11:53:17 2020
 def solution(data, n):
     # Your code here
     data.reverse()
-    has=set(data)
-    for val in has:
+    for val in data:
       num=data.count(val)
       if(num>n):
         for i in range(num):
